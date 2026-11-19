@@ -8,7 +8,7 @@ public class FormaGeometricaMain {
 		System.out.println("Comprimento:");
 		double comprimento=scan.nextDouble();
 		
-		System.out.println("Forma geométrica: (1-quadrado, 2-retangulo, 3-circulo)");
+		System.out.println("Forma geométrica: (1- Quadrado, 2- Retângulo, 3- Círculo)");
 		int resp=scan.nextInt();
 		switch(resp) {
 			case 1:
@@ -27,6 +27,9 @@ public class FormaGeometricaMain {
 				IFormaGeometrica circulo=new Circulo(largura,comprimento);
 
 				System.out.println("Aréa : "+circulo.area()+" Comprimento : "+circulo.comprimento());
+				break;
+			default:
+				System.out.println("Resposta inválida");
 				break;
 		}
 		scan.close();
